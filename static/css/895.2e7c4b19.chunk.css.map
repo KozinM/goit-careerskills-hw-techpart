@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/895.2e7c4b19.chunk.css","mappings":"AAAA,mBACI,WACF,CAEA,oBACE,YAAa,CACb,qBAAsB,CACtB,kBACF","sources":["components/SigninForm/style.module.css"],"sourcesContent":[".form {\n    width: 320px;\n  }\n  \n  .label {\n    display: flex;\n    flex-direction: column;\n    margin-bottom: 16px;\n  }\n  "],"names":[],"sourceRoot":""}
