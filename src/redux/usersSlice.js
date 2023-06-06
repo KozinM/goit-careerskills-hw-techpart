@@ -1,32 +1,49 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { addContact, deleteContact, fetchContacts } from './operations';
+import { fetchUsers } from './operations';
+import { usersFilters } from './constants';
 
-const contactsInitialState = {
+const usersInitialState = {
   items: [],
   isLoading: false,
   error: null,
+  fetchedData: false,
 };
 
-const contactsSlice = createSlice({
+const usersSlice = createSlice({
   // slice name
-  name: 'contacts',
+  name: 'users',
   // initial state of reducer
-  initialState: contactsInitialState,
+  initialState: usersInitialState,
+  reducers:{
+      userFollowToggle(state, action) {
+        for (const user of state.items) {
+          if (user.id === action.payload) {
+            if (user.status === usersFilters.follow) {
+              user.status = usersFilters.followings; 
+            } else {
+              user.status = usersFilters.follow;
+            }
+            break;
+          }
+        }
+      },
+  },
   extraReducers: {
-    [fetchContacts.pending](state) {
+    [fetchUsers.pending](state) {
       state.isLoading = true;
     },
-    [fetchContacts.fulfilled](state, action) {
+    [fetchUsers.fulfilled](state, action) {
       state.isLoading = false;
       state.error = null;
       state.items = action.payload;
+      state.fetchedData = true;
     },
-    [fetchContacts.rejected](state, action) {
+    [fetchUsers.rejected](state, action) {
       state.isLoading = false;
       state.error = action.payload;
     },
     // Код редюсеров добавления
-    [addContact.pending](state) {
+/*     [addContact.pending](state) {
       state.isLoading = true;
     },
     [addContact.fulfilled](state, action) {
@@ -53,9 +70,11 @@ const contactsSlice = createSlice({
     [deleteContact.rejected](state, action) {
       state.isLoading = false;
       state.error = action.payload;
-    },
+    }, */
   },
 });
 
 // slice's reducer
-export const contactsReducer = contactsSlice.reducer;
+export const usersReducer = usersSlice.reducer;
+
+export const { userFollowToggle } = usersSlice.actions;

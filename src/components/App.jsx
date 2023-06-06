@@ -1,27 +1,37 @@
-import { Route, Routes } from 'react-router-dom';
+/* import { Route, Routes } from 'react-router-dom';
 import { useEffect, lazy } from 'react';
 import { useDispatch } from 'react-redux';
 import { useAuth } from 'hooks/useAuth';
-import { refreshUser } from 'redux/auth/operations';
+import { refreshUser } from 'redux/auth/operations'; */
+import { UsersFilter } from "./UsersFilter/UsersFilter";
+import { UsersList } from "./UsersList/UsersList";
+import { users } from './Data/UserData';
+
+
 
 //components
-import { RestrictedRoute } from './Routing/RestrictedRoute';
+/* import { RestrictedRoute } from './Routing/RestrictedRoute';
 import { PrivateRoute } from './Routing/PrivateRoute';
-import { Layout } from './Layout/Layout';
+import { Layout } from './Layout/Layout'; */
 
-// import { SigninForm } from './SigninForm/SinginForm';
-// import { LoginForm } from './LoginForm/LoginForm';
-// import { Phonebook } from './Pages/Phonebook';
-// import Home from './Pages/Home';
-
-const SigninForm = lazy(()=> import('./SigninForm/SinginForm'));
+/* const SigninForm = lazy(()=> import('./SigninForm/SinginForm'));
 const LoginForm = lazy(()=> import('./LoginForm/LoginForm'));
 const Phonebook = lazy(()=> import('../components/Pages/Phonebook'));
-const Home = lazy(()=> import('../components/Pages/Home'));
+const Home = lazy(()=> import('../components/Pages/Home')); */
 
 
 
 export const App = () => {
+  
+ return (
+<> 
+<UsersFilter/>
+<UsersList usersPerPage={3} users={users}/>
+</>
+ )
+};
+
+/* export const App = () => {
 
   const dispatch = useDispatch();
   const { isRefreshing } = useAuth();
@@ -60,3 +70,4 @@ export const App = () => {
     </Routes>
   );
 };
+ */

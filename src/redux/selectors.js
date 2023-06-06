@@ -1,13 +1,19 @@
-export const selectContacts = ({contacts})=> contacts;
+
+import { usersFilters } from "./constants";
+export const selectUsers = ({users})=> users;
 export const selectFilter = ({filter}) => filter;
 
 
-export const selectFilteredContacts = ({contacts, filter}) => {
-    if (!filter) {
-        return contacts.items;
-    }
-    const normalizedFilter = filter.toLowerCase();
-    return contacts.items.filter(contact =>
-      contact.name.toLowerCase().includes(normalizedFilter)
-    );
+
+export const selectFilteredUsers = ({users, filter}) => {
+  
+  if (filter===usersFilters.follow) {
+    return users.items.filter(item => item.status===usersFilters.follow);
+  }
+  if (filter===usersFilters.followings) {
+    return users.items.filter(item => item.status===usersFilters.followings);
+  }
+  return users.items;
   };
+
+  export const getUsersFilter = state => state.filter;
