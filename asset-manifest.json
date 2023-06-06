@@ -1,27 +1,13 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-08-phonebook/static/css/main.bcd2a156.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.fa60e8b9.js",
-    "static/css/895.2e7c4b19.chunk.css": "/goit-react-hw-08-phonebook/static/css/895.2e7c4b19.chunk.css",
-    "static/js/895.3a4699b2.chunk.js": "/goit-react-hw-08-phonebook/static/js/895.3a4699b2.chunk.js",
-    "static/css/471.b35373cf.chunk.css": "/goit-react-hw-08-phonebook/static/css/471.b35373cf.chunk.css",
-    "static/js/471.f8caf4e5.chunk.js": "/goit-react-hw-08-phonebook/static/js/471.f8caf4e5.chunk.js",
-    "static/css/946.0c6ced94.chunk.css": "/goit-react-hw-08-phonebook/static/css/946.0c6ced94.chunk.css",
-    "static/js/946.156861b1.chunk.js": "/goit-react-hw-08-phonebook/static/js/946.156861b1.chunk.js",
-    "static/js/728.53ef7a55.chunk.js": "/goit-react-hw-08-phonebook/static/js/728.53ef7a55.chunk.js",
-    "index.html": "/goit-react-hw-08-phonebook/index.html",
-    "main.bcd2a156.css.map": "/goit-react-hw-08-phonebook/static/css/main.bcd2a156.css.map",
-    "main.fa60e8b9.js.map": "/goit-react-hw-08-phonebook/static/js/main.fa60e8b9.js.map",
-    "895.2e7c4b19.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/895.2e7c4b19.chunk.css.map",
-    "895.3a4699b2.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/895.3a4699b2.chunk.js.map",
-    "471.b35373cf.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/471.b35373cf.chunk.css.map",
-    "471.f8caf4e5.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/471.f8caf4e5.chunk.js.map",
-    "946.0c6ced94.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/946.0c6ced94.chunk.css.map",
-    "946.156861b1.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/946.156861b1.chunk.js.map",
-    "728.53ef7a55.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/728.53ef7a55.chunk.js.map"
+    "main.css": "/goit-careerskills-hw-techpart/static/css/main.0e2d8198.css",
+    "main.js": "/goit-careerskills-hw-techpart/static/js/main.42398df4.js",
+    "index.html": "/goit-careerskills-hw-techpart/index.html",
+    "main.0e2d8198.css.map": "/goit-careerskills-hw-techpart/static/css/main.0e2d8198.css.map",
+    "main.42398df4.js.map": "/goit-careerskills-hw-techpart/static/js/main.42398df4.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcd2a156.css",
-    "static/js/main.fa60e8b9.js"
+    "static/css/main.0e2d8198.css",
+    "static/js/main.42398df4.js"
   ]
 }
