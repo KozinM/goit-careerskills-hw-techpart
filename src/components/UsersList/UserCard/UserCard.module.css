@@ -1,5 +1,4 @@
 .userCard {
-  position: relative;
   width: 380px;
   height: 460px;
   background: linear-gradient(
@@ -11,25 +10,27 @@
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   box-shadow: -2.5776965618133545px 6.873857021331787px 20.621572494506836px 0px
     rgba(0, 0, 0, 0.23);
 }
 
 .logoImg {
-  padding: 16px;
-  position: absolute;
+  width: 76px;
+  height: 22px;
+  position: relative;
+  top: 20px;
   left: 20px;
 }
 
 .questionImg {
-  padding: 16px;
-  position: relative;
-  top: 0px;
+  margin: 0 auto 0 auto;
+  width: 308px;
 }
 
 .userAvatar {
   position: relative;
+  top:-10px;
+  margin: 0 auto 0 auto;
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -47,7 +48,7 @@
 
 .avatarLine {
   position: relative;
-  top: -45px;
+  top: -55px;
   overflow: visible;
   display: inline-block;
   height: 8px;
@@ -58,9 +59,22 @@
 }
 
 .username {
+  margin: 0 auto 0 auto;
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 8px;
+  color: #ebd8ff;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.tweets {
+  margin: 0px auto 16px;
+  font-size: 14px;
   color: #ebd8ff;
   font-family: 'Montserrat';
   font-style: normal;
@@ -71,6 +85,8 @@
 }
 
 .followersCount {
+  margin: 0px auto 26px;
+  margin: 0 auto 26 auto;
   font-size: 14px;
   color: #ebd8ff;
   font-family: 'Montserrat';
@@ -82,6 +98,7 @@
 }
 
 .followButton {
+  margin: 0 auto;
   width: 196px;
   height: 50px;
   background-color: rgba(235, 216, 255, 1);
@@ -97,10 +114,32 @@
 
   border: none;
   padding: 8px 16px;
+  
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+
   border-radius: 4px;
   cursor: pointer;
 }
 
-.followButton.following {
-  background-color: rgba(92, 211, 168, 1);
+.followingButton{
+  margin: 0 auto;
+  width: 196px;
+  height: 50px;
+  background-color:#5CD3A8;
+  color: #373737;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+
+  text-transform: uppercase;
+
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }
