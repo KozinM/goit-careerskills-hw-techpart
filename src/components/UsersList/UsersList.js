@@ -20,10 +20,9 @@ export const UsersList = () => {
       }
     }, [dispatch, fetchedData]);
 
- 
 
  const getVisibleUsers = useSelector(selectFilteredUsers);
- //console.log(useSelector(selectFilteredUsers));
+
 
   return (
     <div className={styles.userList}>
@@ -37,8 +36,8 @@ export const UsersList = () => {
       {items.length>0 && getVisibleUsers.map(user => (
         <UserCard
           id={user.id}
-          username={user.username}
-          followersCount={user.followersCount}
+          username={user.user}
+          followers={user.followers}
           avatar={user.avatar}
           status={user.status}
         />
